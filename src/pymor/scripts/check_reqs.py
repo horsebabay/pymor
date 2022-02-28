@@ -50,7 +50,7 @@ def _process_file(filename):
             elif line.startswith('#'):
                 continue
             else:
-                raise RuntimeError(f'Error parsing {filename}:\n{f}')
+                raise RuntimeError(f'Error parsing {filename}:\n{f}') from f
 
     return status
 

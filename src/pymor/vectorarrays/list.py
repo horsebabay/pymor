@@ -732,8 +732,8 @@ class ListVectorArrayView(ListVectorArray):
     def __getitem__(self, ind):
         try:
             return self.base[self.base.sub_index(self.ind, ind)]
-        except IndexError:
-            raise IndexError('VectorArray index out of range')
+        except IndexError as e:
+            raise IndexError('VectorArray index out of range') from e
 
     def __delitem__(self, ind):
         raise TypeError('Cannot remove from ListVectorArrayView')
