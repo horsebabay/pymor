@@ -170,7 +170,7 @@ disable = [
     "too-many-instance-attributes",
     "too-many-lines",
     "too-many-locals",
-    "too-many-nested-blocks"
+    "too-many-nested-blocks",
     "too-many-public-methods",
     "too-many-return-statements",
     "too-many-statements",
